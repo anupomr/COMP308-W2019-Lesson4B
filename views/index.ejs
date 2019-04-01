@@ -4,16 +4,49 @@
       <h1 class="display-4">Welcome to    <%= title %> </h1>
       
 <% if(title=="Contact"){ %>
+  <h2>Aupom Roy</h2>
+  Student No : 300853516<br>
+  E-mail: anupomr@gmail.com <br>
+  Phone: +1-647-704-7186<br>
   <a class="btn btn-primary" href="/contact-list" role="button">Contact List</a>
 <% } %>
 <% if(title=="Home"){ %>
-  Our Mission
+ <h3>Our Mission</h3> 
 Gourmet food Online system is an intermediary between the traditional gourmet food lovers and the cooks. 
 Food lovers can order the food of their choice online, where as cooks can register themselves in the system, 
 and cook food in their home as per the online order received from the customers. 
 Our mission is to provide the service that connects both traditional gourmet food lovers, 
 and the gourmet food cooks, to meet the demand of traditional authentic test of the customers in Toronto, Canada.
 <% } %>
+
+
+<% if(title=="About"){%>
+ <p>Gourmet food online Inc is headquartered in Toronto and incorporate in the province of Ontario. The company is owned by Andrez, Anupam, Ramesh, and Shiva. Andrez has 10 years of Business System Analyst experience, Anupam has 10 plus years of ecommerce management experience, Ramesh has 10 years of ecommerce Marketing experience, and Shiva is an expert in food handling. All the partners will be given the role as per their expertise.
+</p>
+    <% }else if(title=="FeedBack"){%>
+      Please Login First
+    <% } else if(title=="Service"){%>
+      <h3>Our Services</h3>
+      <p>We provide online service, which helps to connect traditional gourmet food lovers and the gourmet food cooks. 
+        We consider both the parties as our client and provide the following services to both the clients.</p>
+<ul><li>
+    Register to become a Traditional gourmet cook and earn money from home.
+  </li>
+  <li>
+      Register to Order traditional gourmet food online and enjoy the authentic test from back home.
+  </li>
+  <li>
+      Registered customer can order food online, and registered cook receives the order online.
+  </li>
+  <li>
+      Customer can pay for food online, and Cooks receives the pay cheque from the company.
+  </li>
+</ul>
+<%} else {%>
+      <b>This is COMP255 Business  Entrepreneurship - SET (SEC. 001)</b>
+    <% } %>
+   
+
 
 
     </div>
