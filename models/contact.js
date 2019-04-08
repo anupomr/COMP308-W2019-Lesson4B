@@ -1,13 +1,14 @@
 let mongoose=require('mongoose');
 
 //Create model  class
-let contactSchema=mongoose.Schema({
-    firstName: String,
-    lastName: String,
-    age: Number
+let myContactDB=mongoose.Schema({
+    FirstName: String,
+    LastName:String,
+    Email:String,
+    Message:String
 },
 {
-    collection: "first"
+    collection: "feedbacktable"
 });
 
-module.exports=mongoose.model('test', contactSchema);
+module.exports=mongoose.model('contactModel', myContactDB);

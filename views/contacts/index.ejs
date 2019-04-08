@@ -1,36 +1,38 @@
 <% include ../partials/header.ejs %>
+<div class="container" >
 
-<div class="container">
   <div class="row">
-    <div class="col-md-offsetr-3 col-md-6">
-      <h1>
-        <%= title %>
-      </h1>
-      <br>
-      <table class="table table-bordered table-striped table-hover">
-        <!--Header Row-->
-        <tr>
-          <th class="text-center">First Name</th>
-          <th class="text-center">Last Name</th>
-          <th class="text-center">Age</th>
-        </tr>
-        <!--Header Row-->
-        <% for(let count = 0; count < contactList.length; count++) { %>
-          <tr>
-              <td class="text-center"><%= contactList[count].firstName %></td>
-              <td class="text-center"><%= contactList[count].lastName %></td>
-              <td class="text-center"><%= contactList[count].age %></td>
-          </tr>
-      <% } %>
-
-      </table>
-
-    </div>
-
-
+      <div class="col-md-offset-3 cold-md-6">
+          
+          <h1>Your Feedbacks are highly valued</h1>
+          <form action="" class="form" method="post">
+              <div class="form-group">
+                  <label for="FirtNameTextField">First Name</label>
+                  <input type="text" class="form-control" id="FirstNameTextField" placeholder="Enter First Name"
+                  name="firstName" required>
+              </div>
+              <div class="form-group">
+                  <label for="LastNameTextField">Last Name</label>
+                  <input type="text" class="form-control" id="LastNameTextField" placeholder="Enter Last Name"
+                  name="lastName" required>
+              </div>
+              <div class="form-group">
+                  <label for="EmailTextField">Your Email</label>
+                  <input type="text" class="form-control" id="EmailTextField" placeholder="Enter Your Email"
+                  name="email" required>
+              </div>
+              <div class="form-group">
+                  <label for="MessageTextField">Message</label>
+                  <textarea class="form-control" id="MessageTextField" rows="5" placeholder="Type Your Message "
+                  name="message" required></textarea>
+              
+              </div>
+              <button type="submit" class="btn btn-primary"> 
+              <i class="fa fa-lg fa-share-square"></i> Send Now</button>
+          </form>
+          
+      </div>
   </div>
 </div>
-
-
-
+</body>
 <% include ../partials/footer.ejs %>
