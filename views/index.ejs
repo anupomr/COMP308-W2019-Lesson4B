@@ -1,48 +1,86 @@
 <% include ./partials/header.ejs %>
   <main class="container"> 
     <div class="jumbotron">
-      <h1 class="display-4">Welcome to    <%= title %> </h1>
-      
+     
+  <table style="width: 103%">
 <% if(title=="Contact"){ %>
-  <h2>Aupom Roy</h2> 
-  E-mail: anupomr@gmail.com <br>
-  Phone: +1 (647) 704-7186<br><br>
+  
+  <tr>
+      <td>
+        <h2>Aupom Roy</h2>
+        E-mail: anupomr@gmail.com <br>
+        Phone: +1 (647) 704-7186<br><br>
+      </td>  
+      <td> 
+          <h2>Ramesh Bhandari</h2>  
+          E-mail: rpbhandari1@gmail.com <br>
+          Phone: +1 (647) 859-7627<br><br>
+      </td>
+    </tr>
 
-  <h2>Ramesh Bhandari</h2>  
-  E-mail: rpbhandari1@gmail.com <br>
-  Phone: +1 (647) 859-7627<br><br>
+    <tr>
+        <td>
+          
+          <h2>Shivaraj Raut</h2>
+          E-mail: shivaraj.raut@gmail.com <br>
+          Phone: +1 (647) 741-3712<br><br>
+        </td>  
+        <td> 
+            <h2>Andrzej Popowski</h2>
+            E-mail: andrp2009@gmail.com <br>
+            Phone: +1 (437) 999-6464<br><br>
+        </td>
+      </tr>
+  
 
-  <h2>Shivaraj Raut</h2>
-  E-mail: shivaraj.raut@gmail.com <br>
-  Phone: +1 (647) 741-3712<br><br>
-
-  <h2>Andrzej Popowski</h2>
-  E-mail: andrp2009@gmail.com <br>
-  Phone: +1 (437) 999-6464<br><br>
 
   <a class="btn btn-primary" href="/contact-list" role="button">Contact List</a>
 <% } %>
+
 <% if(title=="Home"){ %>
-  <img src="Assets/images/logo-1.png">
- <h3>Our Mission</h3> 
  
-Gourmet food Online system is an intermediary between the traditional gourmet food lovers and the cooks. 
-Food lovers can order the food of their choice online, where as cooks can register themselves in the system, 
-and cook food in their home as per the online order received from the customers. 
-Our mission is to provide the service that connects both traditional gourmet food lovers, 
-and the gourmet food cooks, to meet the demand of traditional authentic test of the customers in Toronto, Canada.
+  <tr><h3>Our Mission</h3> </tr>
+ <tr>
+   <td>
+      Gourmet food Online system is an intermediary between the traditional gourmet food lovers and the cooks. 
+      Food lovers can order the food of their choice online, where as cooks can register themselves in the system, 
+      and cook food in their home as per the online order received from the customers. 
+      Our mission is to provide the service that connects both traditional gourmet food lovers, 
+      and the gourmet food cooks, to meet the demand of traditional authentic test of the customers in Toronto, Canada.
+
+   </td>
+   <td> <img src="Assets/images/logo-1.png" ></td>
+ </tr>
+ 
+
 <% } %>
 
 
 <% if(title=="About"){%>
- <p>Gourmet food online Inc is headquartered in Toronto and incorporate in the province of Ontario. The company is owned by Andrez, Anupam, Ramesh, and Shiva. Andrez has 10 years of Business System Analyst experience, Anupam has 10 plus years of ecommerce management experience, Ramesh has 10 years of ecommerce Marketing experience, and Shiva is an expert in food handling. All the partners will be given the role as per their expertise.
+  <tr>
+<td>
+    <h3>About us</h3>
+    <p>Gourmet food online Inc is headquartered in Toronto and incorporate in the province of Ontario. The company is owned by Andrez, Anupam, Ramesh, and Shiva. Andrez has 10 years of Business System Analyst experience, Anupam has 10 plus years of ecommerce management experience, Ramesh has 10 years of ecommerce Marketing experience, and Shiva is an expert in food handling. All the partners will be given the role as per their expertise.
+   
+</td>
+<td>
+    <img src="Assets/images/chef.jpg" height="350" width="550" >
+</td>
+  </tr>
+ 
 </p>
     <% }else if(title=="FeedBack"){%>
-      Please Login First
+    <h3>Please Login First</h3>  <br> 
+      
+    <img src="Assets/images/tmg.jpg" >
+
     <% } else if(title=="Service"){%>
-      <h3>Our Services</h3>
+      <tr><h3>Our Services</h3></tr>
+      <tr>
       <p>We provide online service, which helps to connect traditional gourmet food lovers and the gourmet food cooks. 
         We consider both the parties as our client and provide the following services to both the clients.</p>
+      </tr>
+      <td>
 <ul><li>
     Register to become a Traditional gourmet cook and earn money from home.
   </li>
@@ -55,13 +93,17 @@ and the gourmet food cooks, to meet the demand of traditional authentic test of 
   <li>
       Customer can pay for food online, and Cooks receives the pay cheque from the company.
   </li>
-</ul>
+</ul></td>
+<td>
+
+    <img src="Assets/images/service.jpg" height="350" width="550">
+</td>
 <%} else {%>
-      <b>This is COMP255 Business  Entrepreneurship - SET (SEC. 001)</b>
+      <b></b>
     <% } %>
    
 
-
+  </table>
 
     </div>
 
